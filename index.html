@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
-
-
-    <title>Document</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+    <title>Project Eros </title> 
 </head> 
-<style>   
+<style>     
+    nav ul li a:hover { 
+      color: #d2a056 !important; 
+    }
     .bg-image{     
-        object-fit: contain ; 
-        background-image: url("./images/Vector-BG.jpg");   
-        width: 100%;
-        height: 100%;
-
-    }  
-
+        height:800px;
+        /* background-image: url("./images/Vector-BG.jpg");          */ 
+        background-image: url("./images/test.jpg") ; 
+        /* background: url("./images/Vector-BG.jpg") center no-repeat; */
+        background-size: 100% 100% ; 
+    
+    }   
+    html {
+  scroll-behavior: smooth;
+}
+ 
     body{   
         background-color: black;  
         height: 100%;
@@ -26,8 +31,12 @@
 
     } 
     .navGradient {  
-          background-image: linear-gradient(black, #202020 , #202020) ;  
-    } 
+          background-image: linear-gradient(black,black, #202020 , #202020) ;   
+    }  
+
+    #grad {
+  background-image: linear-gradient(red, yellow);
+}
     span.separator {
         border-top: 5px solid #d2a056;  
         color : black
@@ -52,11 +61,44 @@
 </style>
 <body>      
     <!-- navbar -->
-    <nav class=" navbar navGradient navbar-light bg-light shadow-lg" data-aos="fade-up">  
-        <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" width="90" height="50" alt="">
-        </a>
-    </nav>   
+    <nav class="navbar  navGradient navbar-expand-lg navbar-light bg-light navbar-right">  
+        <div class="container">
+
+        <a class="navbar-brand" href="#"> 
+                <img src="./images/logo.png" width="90" height="50" alt="">
+        </a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Whitepaper <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">View Contract</a>
+                </li>   
+                <li class="nav-item"> 
+                    <a class="nav-link text-white" href="#Milestones"> Milestones</a> 
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">How to hold </a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>  
+            </ul> 
+        </div> 
+            <a  href="#" style="color: #d2a056 ;font-size: 30px; "  ><i class="fab fa-facebook"></i></a>  
+            <a  class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-twitter"></i></a> 
+            <a href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-youtube"></i></a>  
+            <a class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-discord"></i></a> 
+            <a href="#" style="color: #d2a056;margin-right: 10px; font-size: 30px;"    ><i class="fab fa-instagram"></i></a>  
+
+        </div>
+</nav>
+
+
 
     <div class="container">     
 
@@ -143,67 +185,64 @@
             </div>
         </div> 
 
-        <div style="margin-top:200px;">    
-            <h1 data-aos="fade"    class='text-center' style="color: #d2a056;">Milestones</h1>     
+        <div class='p-5'>    
+            <h1 data-aos="fade"  id="Milestones"   class='text-center' style="color: #d2a056;">Milestones</h1>     
             <div class="row">   
                 <div data-aos-delay="300" data-aos="fade-up-right" class="col-md-6 float-left"> 
                     <img class="float mr-5"  data-aos-delay="150" data-aos="fade-down"src="./images/UPEROS.png" width="500" height="700" alt="just for fans">       
                 </div> 
-                <div data-aos-delay="500" data-aos="fade-up-left" class="col-md-6" style="margin-top:70px;">   
+                <div data-aos-delay="500" data-aos="fade-up-left" class="col-md-6" style="margin-top:50px;">    
                     <br> 
-                    <div> 
-                        <h5 style="color: #d2a056;">May</h5>       
-                        <img src="./images/123.JPG" alt=""> 
+                    <div>  
 
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi officiis, quaerat, quas deleniti natus aspernatur optio ipsa maiores vero itaque ea quisquam voluptate atque sint doloremque? Magnam, voluptatum cum!
+                        <i class="fas fa-check-double" style="color: #d2a056;"></i> <span style="color: #d2a056">May</span>              
                         <p class="text-white">We will launch Eros on PancakeSwap V2, our social media pages and the website. After launch, we would apply for different listings and audit to prove that we are transparent and legitimate. In this stage, you are very early and we ask for your help to hold with us.</p>
                     </div>  
-                    <div>  
-                        <h5 style="color: #d2a056;">June</h5>       
+                    <div>   
+
+                        <i class="fas fa-check-double" style="color: #d2a056;"></i> <span style="color: #d2a056">June</span>              
                         <p class="text-white"> We would start developing our android and iOS Application. It will be specialized in privacy and for the use of the Adult Industry. Our holders shall enjoy this privilege, free of charge.</p> 
                     </div> 
-                    <div> 
-                        <h5 style="color: #d2a056;">July</h5>         
+                    <div>    
+                        <i class="fas fa-check-double" style="color: #d2a056;"></i> <span style="color: #d2a056">July</span>               
                         <p class="text-white"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio nihil cum adipisci? Eveniet, reprehenderit hic reiciendis laboriosam similique rerum consequuntur. Et cum saepe, doloremque harum similique veritatis hic sit voluptas?</p>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>     
 
-    </div>   
-    <div class='bg-image'> 
 
-sdaskdasd
-        asdasdasd 
-        <p>sdasdasd</p> 
+    </div>    
 
-sdaskdasd
-sdaskdasd
-sdaskdasd
-sdaskdasd
-sdaskdasd
-sdaskdasd
-        asdasdasd 
-        <p>sdasdasd</p>
-        asdasdasd 
-        <p>sdasdasd</p>
-        asdasdasd 
-        <p>sdasdasd</p>
-        asdasdasd 
-        <p>sdasdasd</p>
-        asdasdasd 
-        <p>sdasdasd</p>
-        asdasdasd 
-        <p>sdasdasd</p>
-
-    </div>
-    <div class="container" style=" width: 100%; height: 100%;">   
-        <div class="bg-image" style="margin-top:200px;">     
-
-            <!-- <h1 class='text-center' style="color: #d2a056;">Tokenomics</h1>              -->
+<!-- footer -->  
+<div class="navGradient px-5 ">        
+    <div class="row">  
+        <div class="col"> 
+            <li> 
+                <a href="#" style="color: #d2a056;">How to buy</a> 
+            </li>    
+            <li> 
+                <a href="#" style="color: #d2a056;">View Contract</a> 
+            </li>    
+            <li> 
+                <a href="#" style="color:#d2a056">White Paper</a> 
+            </li>   
+        </div> 
+        <div class="col text-center  mx-auto "> 
+            <img src="./images/logo.png" height="40px" width="80px"  alt="">
+        </div> 
+        <div class="col">  
+            <div class="row float-right px-5 " style="font-size: 30px;">  
+                <a  href="#" style="color: #d2a056 " ><i class="fab fa-facebook"></i></a> 
+                <a  class="px-3" href="#" style="color: #d2a056 " ><i class="fab fa-twitter"></i></a> 
+                <a href="#" style="color: #d2a056 " ><i class="fab fa-youtube"></i></a>  
+            </div>
         </div>
     </div>
-    <br> 
+</div>
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
