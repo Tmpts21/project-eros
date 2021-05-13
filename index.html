@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
     <title>Project Eros </title> 
 </head> 
-<style>     
+<style>      
+        @media screen and (max-width: 480px) {
+        #footer {
+            overflow: hidden;
+            width: 100%;
+            max-height:100%;
+        } 
+        }
     nav ul li a:hover { 
       color: #d2a056 !important; 
     }
+
     .bg-image{     
         height:800px;
         /* background-image: url("./images/Vector-BG.jpg");          */ 
@@ -30,8 +38,14 @@
         margin: 0;
 
     } 
-    .navGradient {  
-          background-image: linear-gradient(black,black, #202020 , #202020) ;   
+    .footer-gradient {  
+          background-image: linear-gradient(black, black , #202020 , #202020, #202020 ) ;      
+    }   
+
+    .navGradient {    
+          height: 130px; 
+          padding-bottom: 50px;
+          background-image: linear-gradient(#202020,#202020 ,#202020 ,  #151515  , black  ,black) ;             
     }  
 
     #grad {
@@ -61,22 +75,22 @@
 </style>
 <body>      
     <!-- navbar -->
-    <nav class="navbar  navGradient navbar-expand-lg navbar-light bg-light navbar-right">  
+    <nav class="navbar  navGradient navbar-expand-lg navbar-light bg-light navbar-right" >   
         <div class="container">
 
         <a class="navbar-brand" href="#"> 
                 <img src="./images/logo.png" width="90" height="50" alt="">
-        </a> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav"> 
-            <ul class="navbar-nav ">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Whitepaper <span class="sr-only">(current)</span></a>
+        </a>  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >      
+            <i class="fas fa-bars " style="color :#d2a056 ; font-size: 30px;"></i> 
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarNav" >   
+            <ul class="navbar-nav "> 
+                <li class="nav-item active"> 
+                     <a class="nav-link text-white" href="https://projecteros.co/wp-content/uploads/2021/05/eroswhitepaper-1.3.pdf">Whitepaper <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">View Contract</a>
+                    <a class="nav-link text-white" href="https://bscscan.com/token/0xebb45a94b1b4a9eea1a94aa512443fe2b7a78b93?a=0xaf3722b8b16107f682b37280fb9460486182f8df&fbclid=IwAR3oSlakUxps-XCViiD2mp4VeNjua05DAf7fKgcFOyFAHwTkQKm8JpZ-WS0">View Contract</a>
                 </li>   
                 <li class="nav-item"> 
                     <a class="nav-link text-white" href="#Milestones"> Milestones</a> 
@@ -87,14 +101,16 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">About</a>
                 </li>  
-            </ul> 
-        </div> 
-            <a  href="#" style="color: #d2a056 ;font-size: 30px; "  ><i class="fab fa-facebook"></i></a>  
-            <a  class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-twitter"></i></a> 
-            <a href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-youtube"></i></a>  
-            <a class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-discord"></i></a> 
-            <a href="#" style="color: #d2a056;margin-right: 10px; font-size: 30px;"    ><i class="fab fa-instagram"></i></a>  
+            </ul>    
+            <div  style="padding-left:290px">   
+                <a  href="#"  style="color: #d2a056 ;font-size: 30px; "  ><i class="fab fa-facebook"></i></a>  
+                <a  class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-twitter"></i></a> 
+                <a href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-youtube"></i></a>  
+                <a class="px-3" href="#" style="color: #d2a056  ;font-size: 30px; " ><i class="fab fa-discord"></i></a> 
+                <a href="#" style="color: #d2a056;margin-right: 10px; font-size: 30px;"    ><i class="fab fa-instagram"></i></a>  
 
+            </div>
+        </div> 
         </div>
 </nav>
 
@@ -215,9 +231,9 @@
     </div>    
 
 <!-- footer -->  
-<div class="navGradient px-5 ">        
-    <div class="row">  
-        <div class="col"> 
+<div  class="footer-gradient p-5 " >           
+    <div class="row justify-content-center" style="padding-top: 50px">     
+        <div class="col-sm ">  
             <li> 
                 <a href="#" style="color: #d2a056;">How to buy</a> 
             </li>    
@@ -231,13 +247,13 @@
         <div class="col text-center  mx-auto "> 
             <img src="./images/logo.png" height="40px" width="80px"  alt="">
         </div> 
-        <div class="col">  
+        <div class="col-sm ">  
             <div class="row float-right px-5 " style="font-size: 30px;">  
                 <a  href="#" style="color: #d2a056 " ><i class="fab fa-facebook"></i></a> 
                 <a  class="px-3" href="#" style="color: #d2a056 " ><i class="fab fa-twitter"></i></a> 
                 <a href="#" style="color: #d2a056 " ><i class="fab fa-youtube"></i></a>  
             </div>
-        </div>
+        </div>  
     </div>
 </div>
 
